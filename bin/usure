@@ -1,0 +1,4 @@
+#!/bin/bash
+
+[ $(echo -e " No\n Yes" | dmenu -l 30 -nb "#D43D33" -nf "#002B76" -i -p "$1") \
+== "Yes" ] && $2
