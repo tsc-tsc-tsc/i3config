@@ -15,8 +15,12 @@ default_border pixel 3
 gaps inner 10
 gaps outer 10
 
+
+bindsym $mod+F6 gaps inner current plus 4;gaps outer current plus 75
+
+bindsym $mod+Shift+F7 gaps inner current minus 4;gaps outer current minus 3
 bindsym $mod+F7 gaps inner current plus 4;gaps outer current plus 3
-bindsym $mod+Shift+F7 gaps inner current set 0;gaps outer current set 0
+bindsym $mod+Shift+F6 gaps inner current set 0;gaps outer current set 0
 
 
 
@@ -40,12 +44,6 @@ bindsym $mod+BackSpace exec --no-startup-id urxvt -e htop
  
 
 
-#THUNAR
-#
-#bindsym $mod+F9 exec --no-startup-id thunar
-bindsym $mod+F9 exec --no-startup-id usure "Thunar" "thunar"
-
-
 
 
 #PRINT SCREEN
@@ -57,7 +55,7 @@ bindsym $mod+shift+F10 exec --no-startup-id redshift -x
 
 
 
-#XBACKLIGHT
+#XBACKLIGHT notebook
 
 bindsym $mod+F12 exec --no-startup-id xbacklight -inc 10
 bindsym $mod+F11 exec --no-startup-id xbacklight -dec 10
@@ -210,7 +208,7 @@ set $ws6 "6"
 set $ws7 "7"
 set $ws8 "8"
 set $ws9 "9"
-set $ws10 "10"
+set $ws10 "0"
 
 # switch to workspace
 bindsym $mod+1 workspace $ws1
